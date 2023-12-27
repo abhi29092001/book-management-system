@@ -14,7 +14,7 @@ app.use(express.json());
 // method 2: Custom Origins
 app.use(
   cors({
-    origin: "https://book-management-system-dev.netlify.app/",
+    origin: "https://book-management-system-dev.netlify.app",
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
     allowedHeaders: ["Content-Type"],
   })
