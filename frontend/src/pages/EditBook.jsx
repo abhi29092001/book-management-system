@@ -37,7 +37,10 @@ const CreateBook = () => {
     setLoading(true);
 
     axios
-      .patch(`http://localhost:5500/api/books/${id}`, data)
+      .patch(
+        `https://book-management-system-jz0r.onrender.com/api/books/${id}`,
+        data
+      )
       .then(() => {
         setLoading(false);
         enqueueSnackbar("Book Edited Successfully", { variant: "success" });

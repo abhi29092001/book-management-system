@@ -15,7 +15,7 @@ const Home = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("http://localhost:5500/api/books")
+      .get("https://book-management-system-jz0r.onrender.com/api/books")
       .then((res) => {
         setBooks(res.data.data);
         setLoading(false);
